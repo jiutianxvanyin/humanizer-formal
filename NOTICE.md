@@ -15,7 +15,7 @@ hardikpandya/stop-slop          （MIT, © 2025 Hardik Pandya）
         ↓
 humanizer-zh                    （MIT, © 2026 歸藏，中文译改）
         ↓
-humanizer-bizacad               （MIT, 本作品）
+humanizer-formal                （MIT, 本作品）
 ```
 
 上游两个仓库的 MIT 许可原文已于构建时核验（`raw.githubusercontent.com` 直取

@@ -1,0 +1,37 @@
+name: 语料贡献 / Corpus contribution
+description: 提供人写或机器生成的商务/学术文本语料，用于校准或扩展规则
+title: "[语料] "
+labels: ["corpus"]
+body:
+  - type: dropdown
+    id: corpus-type
+    attributes:
+      label: 语料类型
+      options:
+        - 英文人写（用于补齐英文机器痕迹验证）
+        - 英文机器生成/翻译
+        - 中文直接生成（非机器翻译）
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: register
+    attributes:
+      label: 文体/语域
+      description: 例如：教科书、年报、白皮书、学术论文、咨询报告
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 语料说明
+      description: 来源、规模（词数/字数）、版权状态、是否可公开引用
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: 样本片段（可选）
+      description: 如方便，附一小段代表性样本
+    validations:
+      required: false

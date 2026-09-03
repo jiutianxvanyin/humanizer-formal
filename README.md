@@ -1,4 +1,4 @@
-# humanizer-bizacad
+# humanizer-formal
 
 降低商务与学术文本的 AI 生成感，中英文均适用。规则取值来自对约 56 万词英文、
 184 万字中文公开语料的实测，不是凭印象设定。
@@ -19,7 +19,7 @@
 本项目不替代上游，两者可以并存。上游面向通用散文与随笔，本项目面向商务与
 学术书面语。
 
-| | humanizer / Humanizer-zh | humanizer-bizacad |
+| | humanizer / Humanizer-zh | humanizer-formal |
 |---|---|---|
 | 目标文体 | 通用散文、博客、随笔 | 商务报告、学术论文、执行摘要 |
 | 语言 | 分别为英文 / 中文 | 中英双语，规则按语言分开 |
@@ -60,7 +60,7 @@
 ### Skills CLI
 
 ```bash
-npx skills add YOUR-USERNAME/humanizer-bizacad --global
+npx skills add jiutianxvanyin/humanizer-formal --global
 ```
 
 去掉 `--global` 则只安装到当前项目。加 `--agent <name>` 指定接收的 agent，
@@ -69,16 +69,16 @@ npx skills add YOUR-USERNAME/humanizer-bizacad --global
 ### Claude Code 插件
 
 ```text
-/plugin marketplace add YOUR-USERNAME/humanizer-bizacad
-/plugin install humanizer-bizacad@humanizer-bizacad
+/plugin marketplace add jiutianxvanyin/humanizer-formal
+/plugin install humanizer-formal@humanizer-formal
 ```
 
-调用命令是 `/humanizer-bizacad:humanizer-bizacad`。仓库已带
+调用命令是 `/humanizer-formal:humanizer-formal`。仓库已带
 `.claude-plugin/plugin.json` 与 `marketplace.json`。
 
 ### Claude Desktop 与 claude.ai
 
-下载 Releases 里的 `humanizer-bizacad.skill` 直接上传，或把仓库下载为 ZIP 上传。
+下载 Releases 里的 `humanizer-formal.skill` 直接上传，或把仓库下载为 ZIP 上传。
 
 ### 手动安装
 
@@ -86,14 +86,14 @@ npx skills add YOUR-USERNAME/humanizer-bizacad --global
 规则详表在 `references/` 下，缺了会失效。
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/humanizer-bizacad.git \
-  ~/.claude/skills/humanizer-bizacad
+git clone https://github.com/jiutianxvanyin/humanizer-formal.git \
+  ~/.claude/skills/humanizer-formal
 ```
 
 Windows 路径为 `%USERPROFILE%\.claude\skills\`。安装后目录结构应为：
 
 ```
-~/.claude/skills/humanizer-bizacad/
+~/.claude/skills/humanizer-formal/
 ├── SKILL.md
 ├── LICENSE
 ├── NOTICE.md
@@ -127,7 +127,7 @@ Windows 路径为 `%USERPROFILE%\.claude\skills\`。安装后目录结构应为�
 ### 示例
 
 ```
-用 humanizer-bizacad 审校这段执行摘要：
+用 humanizer-formal 审校这段执行摘要：
 
 在当今数字化转型不断深入的背景下，公司面临前所未有的挑战。因此，我们
 对三条产品线进行了全面评估。此外，评估涵盖多个维度。综上所述，B 线
@@ -222,7 +222,7 @@ skill 内含假阳性防护清单，明确列出哪些特征**不该**被当成 
 ## 文件结构
 
 ```
-humanizer-bizacad/
+humanizer-formal/
 ├── SKILL.md                    技能入口，含语域标尺与核心规则
 ├── LICENSE                     MIT，四层署名
 ├── NOTICE.md                   衍生关系与逐项改动记录
@@ -262,7 +262,7 @@ MIT。四层署名见 [`LICENSE`](LICENSE)。本项目的全部说明文字与�
 
 ## English summary
 
-`humanizer-bizacad` removes AI-writing patterns from **business and academic
+`humanizer-formal` removes AI-writing patterns from **business and academic
 prose** in both Chinese and English. It is a sibling of, not a replacement for,
 [blader/humanizer](https://github.com/blader/humanizer).
 

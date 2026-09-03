@@ -1,0 +1,46 @@
+name: 误判反馈 / False positive
+description: 规则把正常人写文本误判为 AI 痕迹时提交
+title: "[误判] "
+labels: ["false-positive"]
+body:
+  - type: textarea
+    id: original-text
+    attributes:
+      label: 原文片段
+      description: 被误判的原文片段（可脱敏，但请保留足够上下文）
+      placeholder: 粘贴被规则误判的原文……
+    validations:
+      required: true
+  - type: input
+    id: rule-id
+    attributes:
+      label: 命中的规则编号
+      description: 例如 A1、B2，或规则名称
+      placeholder: A5
+    validations:
+      required: false
+  - type: dropdown
+    id: language
+    attributes:
+      label: 语言
+      options:
+        - 中文
+        - 英文
+        - 中英混排
+    validations:
+      required: true
+  - type: input
+    id: register
+    attributes:
+      label: 文本语域
+      description: 例如：执行摘要、学术论文、年报、白皮书
+      placeholder: 执行摘要
+    validations:
+      required: false
+  - type: textarea
+    id: explanation
+    attributes:
+      label: 为什么这是误判
+      description: 说明这段文本为什么是人写的合理表达，而非机器痕迹
+    validations:
+      required: true

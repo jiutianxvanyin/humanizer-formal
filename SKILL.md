@@ -1,5 +1,5 @@
 ---
-name: humanizer-bizacad
+name: humanizer-formal
 description: 降低商务与学术文本的 AI 生成感，中英文均适用。用于审校已写好的报告、备忘录、论文、摘要、执行摘要，或在起草时预防机器腔。当用户要求「去 AI 味」「让文字更像人写的」「润色成正式书面语」「检查这段像不像 AI 写的」，或提交商务/学术文本请求改写时使用。不适用于随笔、营销文案、社交媒体、创意写作。
 license: MIT. LICENSE has complete terms
 ---
