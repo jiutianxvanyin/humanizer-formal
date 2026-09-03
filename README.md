@@ -12,6 +12,37 @@
 > 依 MIT 许可发布，四层署名见 [`LICENSE`](LICENSE)，逐项改动记录见
 > [`NOTICE.md`](NOTICE.md)。
 
+
+---
+
+## English summary
+
+`humanizer-formal` removes AI-writing patterns from **business and academic
+prose** in both Chinese and English. It is a sibling of, not a replacement for,
+[blader/humanizer](https://github.com/blader/humanizer).
+
+Two things set it apart:
+
+**Rules are calibrated against measured corpora** — roughly 563k English words
+and 1.84M Chinese characters spanning undergraduate textbooks, graduate
+monographs, SEC 10-K filings, government white papers, central bank reports,
+consulting reports, UN documents, professional human translation, and machine
+translation.
+
+**Machine fingerprints and register markers are judged separately.** Abstract
+nouns and buzzwords turned out to be *lowest* in the machine-translated corpus
+(0.12–0.50 per 1,000 characters) and *highest* in human-written consulting
+reports (7.12). Those words mark institutional and promotional register, not
+machine authorship. Treating them as an AI tell gets the direction backwards.
+
+The skill also inverts one upstream rule: human Chinese writers use three- and
+four-character parallel constructions 2 to 10 times more often than machine
+translation does. Flattening them makes good Chinese worse.
+
+See `RESEARCH.md` for corpus composition, method, three retracted conclusions,
+and known limitations. Instructions are in Chinese; examples are bilingual.
+
+
 ---
 
 ## 和上游的区别
@@ -259,32 +290,3 @@ humanizer-formal/
 
 MIT。四层署名见 [`LICENSE`](LICENSE)。本项目的全部说明文字与示例均为重写，
 未复制上游或维基百科的具体表达。
-
----
-
-## English summary
-
-`humanizer-formal` removes AI-writing patterns from **business and academic
-prose** in both Chinese and English. It is a sibling of, not a replacement for,
-[blader/humanizer](https://github.com/blader/humanizer).
-
-Two things set it apart:
-
-**Rules are calibrated against measured corpora** — roughly 563k English words
-and 1.84M Chinese characters spanning undergraduate textbooks, graduate
-monographs, SEC 10-K filings, government white papers, central bank reports,
-consulting reports, UN documents, professional human translation, and machine
-translation.
-
-**Machine fingerprints and register markers are judged separately.** Abstract
-nouns and buzzwords turned out to be *lowest* in the machine-translated corpus
-(0.12–0.50 per 1,000 characters) and *highest* in human-written consulting
-reports (7.12). Those words mark institutional and promotional register, not
-machine authorship. Treating them as an AI tell gets the direction backwards.
-
-The skill also inverts one upstream rule: human Chinese writers use three- and
-four-character parallel constructions 2 to 10 times more often than machine
-translation does. Flattening them makes good Chinese worse.
-
-See `RESEARCH.md` for corpus composition, method, three retracted conclusions,
-and known limitations. Instructions are in Chinese; examples are bilingual.
