@@ -4,9 +4,26 @@
   "description": "降低商务与学术文本的 AI 生成感，中英文均适用。基于对公开语料的量化分析设定规则。",
   "version": "1.0.0",
   "author": {
-    "name": "玄音"
+    "name": "玄音",
+    "url": "https://github.com/jiutianxvanyin"
   },
   "license": "MIT",
-  "keywords": ["writing", "editing", "ai-detection", "humanize", "chinese", "business-writing", "academic-writing", "bilingual"],
-  "skills": ["./"]
+  "keywords": [
+    "writing",
+    "editing",
+    "ai-detection",
+    "humanize",
+    "chinese",
+    "business-writing",
+    "academic-writing",
+    "bilingual",
+    "register",
+    "style-guide",
+    "claude-skill"
+  ],
+  "skills": [
+    "./"
+  ],
+  "homepage": "https://github.com/jiutianxvanyin/humanizer-formal",
+  "repository": "https://github.com/jiutianxvanyin/humanizer-formal"
 }

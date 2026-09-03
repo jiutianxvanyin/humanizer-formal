@@ -2,7 +2,8 @@
   "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
   "name": "humanizer-formal",
   "owner": {
-    "name": "玄音"
+    "name": "玄音",
+    "url": "https://github.com/jiutianxvanyin"
   },
   "description": "把 humanizer-formal 作为 Claude 插件安装。",
   "plugins": [
@@ -11,7 +12,17 @@
       "source": "./",
       "description": "降低商务与学术文本的 AI 生成感，中英文均适用。",
       "license": "MIT",
-      "keywords": ["writing", "editing", "ai-detection", "humanize", "chinese", "business-writing", "academic-writing", "bilingual"]
+      "keywords": [
+        "writing",
+        "editing",
+        "ai-detection",
+        "humanize",
+        "chinese",
+        "business-writing",
+        "academic-writing",
+        "bilingual"
+      ],
+      "version": "1.0.0"
     }
   ]
 }

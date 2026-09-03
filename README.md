@@ -228,6 +228,8 @@ humanizer-formal/
 ├── NOTICE.md                   衍生关系与逐项改动记录
 ├── README.md                   本文件
 ├── RESEARCH.md                 语料、方法与局限（不打包进发行版）
+├── CHANGELOG.md                变更记录
+├── .github/ISSUE_TEMPLATE/     误伤反馈与语料贡献模板
 ├── .claude-plugin/
 │   ├── plugin.json
 │   └── marketplace.json
