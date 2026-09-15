@@ -1,0 +1,6 @@
+# 统一行尾：仓库内一律存 LF，避免跨平台产生全文件 diff
+* text=auto eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+LICENSE text eol=lf

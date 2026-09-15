@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "humanizer-formal",
   "description": "降低商务与学术文本的 AI 生成感，中英文均适用。基于对公开语料的量化分析设定规则。",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "玄音",
     "url": "https://github.com/jiutianxvanyin"
